@@ -1,12 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
 </head>
-<body>
-    
+
+<body id="dashboard">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" onclick="openSidebar()"><span><img src="image/menu-bar.svg" alt="" srcset=""
+            class="mainNavImg"></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><span><img src="image/header-logo.svg"
+                  class="navbarLogo"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><span><img src="image/search-icon.svg"
+                  class="navbarSearchIcon"></span> Search</a>
+          </li>
+        </ul>
+        <a class="nav-link active" aria-current="page" href="#"><span><img src="image/notification-icon.svg"
+              class="navbarNotification"></span></a>
+        <a class="nav-link active" aria-current="page" href="#"><span><img src="image/profile.png"
+              class="navbarProfile"></span></a>
+        <p class="navbarUser">John Doe</p>
+        <a class="nav-link active" aria-current="page" href="#"><span><img src="image/downward-arrow.svg"
+              class="navbarDownArrow"></span></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="w3-sidebar w3-bar-block" style="display:block" id="mySidebar">
+    <button class="w3-bar-item w3-button sidebarIcon"><span><img src="image/dashboard-default.svg"
+          class="navbarDownArrow">Dashboard</span></button>
+    <button class="w3-bar-item w3-button sidebarIcon"><span><img src="image/graph-default.svg"
+          class="navbarDownArrow">Analysis</span></button>
+    <button class="w3-bar-item w3-button sidebarIcon"><span><img src="image/inbox-default.svg"
+          class="navbarDownArrow">Inbox</span></button>
+    <button class="w3-bar-item w3-button sidebarIcon"><span><img src="image/clock-default.svg"
+          class="navbarDownArrow">History</span></button>
+    <button class="w3-bar-item w3-button sidebarIcon"><span><img src="image/user-default.svg"
+          class="navbarDownArrow">Users</span></button>
+    <button class="w3-bar-item w3-button sidebarIcon"><span><img src="image/maintenance-default.svg"
+          class="navbarDownArrow">Maintanance</span></button>
+    <button class="w3-bar-item w3-button sidebarIcon"><span><img src="image/setting-default.svg"
+          class="navbarDownArrow">Setting</span></button>
+  </div>
+  <div id="mainContent">
+    <p class="Dashboard">Dashboard</p>
+    <div class="detailsCard d-flex">
+
+      <!-- card1 -->
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="image/star.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-title">23,456</p>
+              <p class="card-text">New Products</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card2 -->
+
+      <div class="card mb-3" style="max-width: 219px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="image/new-product.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-title">2345</p>
+              <p class="card-text">Added Products</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card3 -->
+
+      <div class="card mb-3" style="max-width: 219px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="image/total-product.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-title">32,456</p>
+              <p class="card-text">Total Products</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card4 -->
+
+      <div class="card mb-3" style="max-width: 219px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="image/dollar-filled.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-title">5678</p>
+              <p class="card-text">Today's sale</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- card5 -->
+
+      <div class="card mb-3" style="max-width: 219px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="image/money-bag.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <hp class="card-title">33,5342</h>
+              <p class="card-text">total sale</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row graph">
+      <div class="col border">
+        <div class="row sale">
+          <div class="col"><p class="saleText"><b>Sale</b></p></div>
+          <div class="col">
+            <div class="row">
+              <div class="col">
+
+              </div>
+              <div class="col-2 salePeriod">Weekly</div>
+              <div class="col-2 salePeriod">Monthly</div>
+              <div class="col-2 salePeriod SalePeriodActive"><u>Yearly</u></div>
+            </div>
+          </div>
+          <img src="image/data-graph.png" alt="" srcset="">
+        </div>
+      </div>
+      <div class="col border saleByCountery">
+        <p class="saleText"><b>Sales By Country</b></p>
+        <img src="image/pie-chart.svg" alt="">
+        <table>
+          <tr>
+            <td><span><div class="circle"></div>United State</td>
+            <td><div class="circle"></div>Canada</td>
+          </tr>
+          <tr>
+            <td><div class="circle"></div>Russia</td>
+            <td><div class="circle"></div>India</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
