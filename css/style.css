@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FAFAFA;
+}
+.innerDiv{
+    width:50%;
+}
+.left{
+    position: relative;
+    top: 72px;
+left: 166px;
+}
+.left img{
+    width: 576px;
+    height: 576px;
+border-radius: 50%;
+box-shadow: 0px 4px 31px  #0000000A;
+border: 20px solid #FFFFFF;
+opacity: 1;
+}
+.companyLogo{
+    position:Absolute;
+    top: 106px;
+}
+.companyLogo img{
+    width: 272px;
+height: 58px;
+
+}
+.companyText{
+    position:Absolute;
+    width: 500px;
+    height: 100px;
+    top: 183px;
+   
+}
+.companyText p{
+    font: normal normal 300 40px/47px Roboto;
+letter-spacing: 0px;
+color: #3E3E3E;
+}
+.companyText span{
+    font: normal normal 900 40px/53px Roboto;
+letter-spacing: 0px;
+color: #C8242F;
+}
+.loginText{
+    position: Absolute;
+    top:315px;
+    
+}
+.loginText p{
+    text-align: left;
+font: normal normal normal 25px/33px Roboto;
+letter-spacing: 0px;
+color: #3E3E3E;
+}
+.loginForm{
+    position: absolute;
+    top:372px;
+}
+input{
+    width:429px;
+    height:49px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #ADADAD;
+border-radius: 5px;
+}
+input[type=password]{
+    margin-top: 27px;
+}
+input[type=submit]{
+    width: 138px;
+height: 45px;
+background: #C8242F 0% 0% no-repeat padding-box;
+border-radius: 23px;
+font: normal normal medium 18px/24px Roboto;
+letter-spacing: 0px;
+color: #FFFFFF;
+margin-top:30px;
+}
+
+.forgotPass{
+    position: absolute;
+    top:170px;
+    left: 300px;
+    font: normal normal normal 15px/20px Roboto;
+    color: #ADADAD;
+}
+.signIn{
+    position: absolute;
+    top:595px;
+    font: normal normal normal 15px/20px Roboto;
+    color: #ADADAD;
+}
+.signIn span{
+    color: #C8242F;
+}
