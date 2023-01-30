@@ -12,42 +12,49 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/custom.js"></script>
+    <style>
+        
+        @media screen and (max-width: 765px) {
+            .container{
+            margin:0 !important;
+        }
+        }
+    </style>
 </head>
 
 <body>
-<div class="container-fluid">
-
-    <div class="d-flex flex-row">
-        <div class="innerDiv left">
-            <img src="image/hero-image.png" alt="" srcset=""">
-        </div>
-        <div class="innerDiv right">
-            <div class="companyLogo">
-                <img src="image/logo.svg" alt="" srcset="" class="">
+    <div class="container">
+        <div class="row">
+            <div class="col index">
+                <img src="image/hero-image.png" alt="" srcset="">
             </div>
-            <div class="companyText">
-                <P>We are <span>experts</span> in business,<br> marketing, growth,&sales.</P>
-            </div>
-            <div class="loginText">
-                <p class="">Login into your account</p>
-            </div>
-            <div class="loginForm">
-                <div class="forgotPass">
-                    <p>Forgot Password?</p>
+            <div class="col">
+                <div class="companyLogo">
+                    <img src="image/logo.svg" alt="" srcset="" class="">
                 </div>
-                <form action="">
-                    <input type="text" name="username" placeholder=" Username" id=""><br>
-                    <input type="password" name="password" placeholder=" Password" id=""><br>
-                    <input type="submit" value="Login">
-                </form>
+                <div class="companyText">
+                    <P>We are <span>experts</span> in business,<br> marketing, growth,&sales.</P>
+                </div>
+                <div class="loginText">
+                    <p class="">Login into your account</p>
+                </div>
+                <div class="loginForm">
+                    <div class="forgotPass">
+                        <p>Forgot Password?</p>
+                    </div>
+                    <form action="">
+                        <input type="text" name="username" placeholder=" Username" id=""><br>
+                        <input type="password" name="password" placeholder=" Password" id=""><br>
+                        <input type="submit" value="Login">
+                    </form>
 
-            </div>
-            <div class="signIn">
-                <p>Are you a new Member?<span>Register here</span></p>
+                </div>
+                <div class="signIn">
+                    <p>Are you a new Member?<span>Register here</span></p>
+                </div>
             </div>
         </div>
     </div>
-</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

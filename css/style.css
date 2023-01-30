@@ -1,233 +1,527 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: roboto;
+
 }
-body{
+
+body {
     background-color: #FAFAFA;
 }
 
 /* Css Of Index.html Page */
 
-.innerDiv{
-    width:50%;
+.index img{
+    border-radius: 50%;
+    border: 20px solid #FFFFFF;
+    box-shadow: 0px 4px 31px #0000000A;
+    margin-top: 72px;
 }
-.left{
+
+.innerDiv {
+    width: 50%;
+}
+
+.left {
     position: relative;
     top: 72px;
-left: 166px;
+    left: 166px;
 }
-.left img{
+
+.left img {
     width: 576px;
     height: 576px;
-border-radius: 50%;
-box-shadow: 0px 4px 31px  #0000000A;
-border: 20px solid #FFFFFF;
-opacity: 1;
+    border-radius: 50%;
+    box-shadow: 0px 4px 31px #0000000A;
+    border: 20px solid #FFFFFF;
+    opacity: 1;
 }
-.companyLogo{
-    position:Absolute;
+
+.companyLogo {
+    position: Absolute;
     top: 106px;
 }
-.companyLogo img{
+
+.companyLogo img {
     width: 272px;
-height: 58px;
+    height: 58px;
 
 }
-.companyText{
-    position:Absolute;
+
+.companyText {
+    position: Absolute;
     width: 500px;
     height: 100px;
     top: 183px;
-   
-}
-.companyText p{
-    font: normal normal 300 40px/47px Roboto;
-letter-spacing: 0px;
-color: #3E3E3E;
-}
-.companyText span{
-    font: normal normal 900 40px/53px Roboto;
-letter-spacing: 0px;
-color: #C8242F;
-}
-.loginText{
-    position: Absolute;
-    top:315px;
-    
-}
-.loginText p{
-    text-align: left;
-font: normal normal normal 25px/33px Roboto;
-letter-spacing: 0px;
-color: #3E3E3E;
-}
-.loginForm{
-    position: absolute;
-    top:372px;
-}
-input{
-    width:429px;
-    height:49px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #ADADAD;
-border-radius: 5px;
-}
-input[type=password]{
-    margin-top: 27px;
-}
-input[type=submit]{
-    width: 138px;
-height: 45px;
-background: #C8242F 0% 0% no-repeat padding-box;
-border-radius: 23px;
-font: normal normal medium 18px/24px Roboto;
-letter-spacing: 0px;
-color: #FFFFFF;
-margin-top:30px;
+
 }
 
-.forgotPass{
+.companyText p {
+    font: normal normal 300 40px/47px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+}
+
+.companyText span {
+    font: normal normal 900 40px/53px Roboto;
+    letter-spacing: 0px;
+    color: #C8242F;
+}
+
+.loginText {
+    position: Absolute;
+    top: 315px;
+
+}
+
+.loginText p {
+    text-align: left;
+    font: normal normal normal 25px/33px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+}
+
+.loginForm {
     position: absolute;
-    top:170px;
+    top: 372px;
+}
+
+input {
+    width: 429px;
+    height: 49px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+}
+
+input[type=password] {
+    margin-top: 27px;
+}
+
+input[type=submit] {
+    width: 138px;
+    height: 45px;
+    background: #C8242F 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.forgotPass {
+    position: absolute;
+    top: 170px;
     left: 300px;
     font: normal normal normal 15px/20px Roboto;
     color: #ADADAD;
 }
-.signIn{
+
+.signIn {
     position: absolute;
-    top:595px;
+    top: 595px;
     font: normal normal normal 15px/20px Roboto;
     color: #ADADAD;
 }
-.signIn span{
+
+.signIn span {
     color: #C8242F;
 }
 
 
 /*css of Dashboard page*/
 
-.dashboard{
+.dashboard {
     background: #FAFAFA 0% 0% no-repeat padding-box;
 }
-nav{
+
+nav {
     font-size: 16px;
+    z-index: 11;
+    position: fixed;
+    background-color: #FFFFFF;
 }
-.mainNavImg{
+
+.navbar {
+    display: contents;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.mainNavImg {
     margin-left: 30px;
 }
-.navbarLogo{
-    height:30px;
-    width:142px;
-    margin-right:75px;
+
+.navbarLogo {
+    height: 30px;
+    width: 142px;
+    margin-right: 75px;
 }
-.navbarSearchIcon{
-    height:16px;
-    width:16px;
+
+.navbarSearchIcon {
+    height: 16px;
+    width: 16px;
 }
-.navbarDownArrow{
+
+.navbarDownArrow {
     margin-left: 14px;
 }
-.navbarUser{
+
+.navbarUser {
     margin-left: 12px;
 }
-.navbarProfile{
+
+.navbarProfile {
     margin-left: 52px;
-    height:44px;
-    width:44px;
+    height: 44px;
+    width: 44px;
 }
-.navbarNotification{
+
+.navbarNotification {
     height: 22px;
     width: 22px;
 }
-span img{
-    width:19px;
+
+span img {
+    width: 19px;
     height: 18px;
 }
-.w3-sidebar{
+
+.w3-sidebar {
     z-index: 111;
 }
-.w3-sidebar button{
-    margin:12px 30px;
+
+.w3-sidebar button {
+    margin: 12px 30px;
 }
-.w3-sidebar img{
+
+.w3-sidebar img {
     width: 19px;
     height: 19px;
     margin-right: 12px;
 }
-.sidebarIcon:hover{
+
+.sidebarIcon:hover {
     background-color: #FFF3F4;
-    color:#C8242F;
-}
-.w3-sidebar{
-    width:242px;
-}
-#mainContent {
-    margin-left: 20%;
-}
-#mainContent .Dashboard{
-    font-size: 30px;
-    position: absolute;
-    top: 120px;
-}
-.detailsCard{
-    border:none;
-    position: absolute;
-    top:182px;
-}
-.detailsCard .card{
-    width: 219px;
-    height:116px;
-    overflow-y: hidden;
-    margin-right:30px
-
-}
-.detailsCard img{
-    margin:41px 0;
-    margin-left:38px;
-    height:  33px;
-    width: 33px;
-}
-.detailsCard .card-body{
-    padding-top:30px;
-
-}
-.detailsCard .card-title{
-    font-size: 25px;
-}
-.detailsCard .card-text{
-    font-size: 15px;
-}
-.detailsCard .card{
-    border:none;
-}
-.graph{
-    position: relative;
-    top:328px;
-}
-.sale{
-    width:802px;
-    height:400px;
-    padding:30px;
-}
-.saleText{
-    font-size: 22px;
-}
-.salePeriod{
-    font-family: 12px;
-    color: #ADADAD;
-}
-.SalePeriodActive{
     color: #C8242F;
 }
-.saleByCountery{
-    padding:30px;
+
+.w3-sidebar {
+    width: 242px;
 }
 
-.circle{
-    width:18px;
-    height:18px;
+#mainContent {
+    /* margin-left: 18%; */
+    position: relative;
+}
+
+.Dashboard {
+    font-size: 30px;
+}
+.card{
+    border: none !important;
+    border-radius: 0 !important;
+    font:roboto !important;
+    width: 219px;
+    height: 116px;
+    padding: 0 !important;
+}
+.card img{
+    width: 30px;
+    height: 30px;
+}
+.card-text{
+    font-size: 15px !important;
+}
+.card-title{
+    font-size: 25px !important;
+}
+
+
+.detailsCard {
+    border: none;
+    position: absolute;
+    top: 100px;
+}
+
+.detailsCard .card {
+    width: 219px;
+    height: 116px;
+    overflow-y: hidden;
+    margin-right: 30px
+}
+
+.detailsCard img {
+    margin: 41px 0;
+    margin-left: 38px;
+    height: 33px;
+    width: 33px;
+}
+
+.detailsCard .card-body {
+    padding-top: 30px;
+
+}
+
+.detailsCard .card-title {
+    font-size: 25px;
+}
+
+.detailsCard .card-text {
+    font-size: 15px;
+}
+
+.detailsCard .card {
+    border: none;
+}
+
+/* .graph {
+    position: absolute;
+    top: 248px;
+} */
+
+.sale {
+    width: 802px;
+    height: 400px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+.sale img{
+    /* min-width: 250px;
+    width: min(15vw, 802px);
+    margin: 0 auto; */
+    max-width:100%;
+max-height:100%;
+}
+.saleByCountry img{
+    max-width:100%;
+max-height:100%;
+}
+
+.saleText {
+    font-size: 22px;
+}
+
+.salePeriod {
+    font-family: 12px;
+    color: #ADADAD;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin:0 5px;
+}
+
+.SalePeriodActive {
+    color: #C8242F;
+}
+.SalePeriodActive{
+    text-decoration: underline solid #C8242F;
+}
+
+.saleByCountry {
+    width: 385px;
+height: 398px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
     border-radius: 100%;
+    margin: 0 8px;
+    ;
+}
+
+.red {
     background-color: #C8242F;
+}
+
+.green {
+    background-color: #A2B86C;
+}
+
+.orange {
+    background-color: #F16C20;
+}
+
+.yellow {
+    background-color: #EBC844;
+}
+
+.saleByCountery td {
+    padding-right: 25px;
+}
+
+.saleByCountery table {
+    table-layout: auto;
+    width: 100%;
+}
+
+.invoices {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top:2vw ;
+}
+
+.invoices p {
+    font-size: 22px;
+}
+
+.paid {
+    background-color: #EBFFEF;
+    color: #3CDD5F;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.failed {
+    background-color: #FFF5F5;
+    color: #FF4545;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.pending {
+    background-color: #F8F8F8;
+    color: #BABABA;
+    text-align: center;
+    border-radius: 5px;
+}
+
+table {
+    color: #3E3E3E;
+    font-size: 15px;
+    width: 100% !important;
+}
+
+table th {
+    color: #ADADAD;
+}
+
+.invoices a {
+    float: right;
+    text-decoration: none;
+    color: #C8242F;
+}
+
+
+/* Css for inner Page  */
+.navDiv,
+.sideDiv {
+    position: sticky;
+    background-color: #FFFFFF;
+    top: 0;
+    right: 0;
+}
+
+.analysisText {
+    font-size: 30px;
+}
+
+.mainArea {
+    position: relative;
+    /* left: 242px; */
+}
+
+.analysisText {
+    position: absolute;
+    top: 40px;
+    left: 48px;
+    font: normal normal medium 30px/39px Roboto;
+}
+
+.form {
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    padding: 20px;
+}
+
+.colText {
+    text-align: left;
+    font-size: 22px;
+    color: #3E3E3E;
+}
+input[type=password] {
+    margin-top: 0;
+}
+.otherTabs{
+    font-size: 18px;
+}
+.form .upload{
+    width: 124px;
+height: 36px;
+    border-radius:18px;
+    border:1px solid red;
+    padding:0 5px;
+    color: #C8242F;
+    background-color: #fff;
+}
+.noItem{
+    margin-left:20px;
+}
+.form-check-label{
+    margin-right: 40px;
+}
+.otherTags{
+    padding-bottom: 35px;
+}
+.form .cta{
+    margin-right: 20px;
+    font-size: 18px;
+    border-radius: 22.5px;
+}
+.bg-danger{
+    background-color: #C8242F;
+}
+.snackbar img{
+    height:18px;
+    width:18px;
+    margin:10px
+}
+.error{
+    margin-top: 25px;
+    border: 2px solid #FF3535;
+    color: #FF3535;
+    font-size: 18px;
+}
+.information{
+    margin-top: 25px;
+    border: 2px solid #00B9E1;
+    color: #00B9E1;
+    font-size: 18px;
+}
+.success{
+    margin-top: 25px;
+    border: 2px solid #00AF27;
+    color: #00AF27;
+    font-size: 18px;
+}
+.warning{
+    margin-top: 25px;
+    border: 2px solid #FFA800;
+    color: #FFA800;
+    font-size: 18px;
+}
+.tabSwitch{
+    margin-left: 35px;
+    color: #ADADAD;
+    font-size:15px;
+}
+.tabSwitchActive{
+    color: #C8242F;
+    border-bottom: 5px solid red;
+}
+.abc{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.tabSwitch{
+    margin: 0 5px !important;
 }

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+</head>
+
+<body id="innerPage">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white">
+        <div class="container-fluid bg-white">
+            <a class="navbar-brand" onclick="openSidebar()"><span><img src="image/menu-bar.svg" alt="" srcset=""
+                        class="mainNavImg"></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><span><img src="image/header-logo.svg"
+                                    class="navbarLogo"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><span><img src="image/search-icon.svg"
+                                    class="navbarSearchIcon"></span> Search</a>
+                    </li>
+                </ul>
+                <a class="nav-link active" aria-current="page" href="#"><span><img src="image/notification-icon.svg"
+                            class="navbarNotification"></span></a>
+                <a class="nav-link active" aria-current="page" href="#"><span><img src="image/profile.png"
+                            class="navbarProfile"></span></a>
+                <p class="navbarUser">John Doe</p>
+                <a class="nav-link active" aria-current="page" href="#"><span><img src="image/downward-arrow.svg"
+                            class="navbarDownArrow"></span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button sidebarIcon"><span><img src="image/dashboard-default.svg"
+                    class="navbarDownArrow">Dashboard</span></button>
+        <button class="w3-bar-item w3-button sidebarIcon"><span><img src="image/graph-default.svg"
+                    class="navbarDownArrow">Analysis</span></button>
+        <button class="w3-bar-item w3-button sidebarIcon"><span><img src="image/inbox-default.svg"
+                    class="navbarDownArrow">Inbox</span></button>
+        <button class="w3-bar-item w3-button sidebarIcon"><span><img src="image/clock-default.svg"
+                    class="navbarDownArrow">History</span></button>
+        <button class="w3-bar-item w3-button sidebarIcon"><span><img src="image/user-default.svg"
+                    class="navbarDownArrow">Users</span></button>
+        <button class="w3-bar-item w3-button sidebarIcon"><span><img src="image/maintenance-default.svg"
+                    class="navbarDownArrow">Maintanance</span></button>
+        <button class="w3-bar-item w3-button sidebarIcon"><span><img src="image/setting-default.svg"
+                    class="navbarDownArrow">Setting</span></button>
+    </div>
+
+    <div class="mainArea">
+        <p class="analysisText">Analysis</p>
+        <div class="container form">
+            <P class="colText">One Column</P>
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <div class="form-group form-outline">
+                            <input type="text" class="form-control">
+                            <label class="form-label" for="form1Example1">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group abc">
+                            <select class="form-control form-control-lg">
+                                <option>dropdown</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group form-outline">
+                            <textarea class="form-control" rows="3"></textarea>
+                            <label class="form-label" for="form1Example1">Multiple line</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <P class="colText">two Column</P>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group form-outline">
+                            <input type="text" class="form-control">
+                            <label class="form-label" for="form1Example1">Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group form-outline">
+                            <input type="text" class="form-control" value="johndoe">
+                            <label class="form-label" for="form1Example1">Username</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group form-outline">
+                            <input type="password" class="form-control">
+                            <label class="form-label" for="form1Example1">Password</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group dropdown">
+                            <select class="form-control form-control-lg">
+                                <option>dropdown</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <P class="colText">three Column</P>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="form-group form-outline">
+                            <input type="text" class="form-control" autofocus>
+                            <label class="form-label" for="form1Example1">Focus</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="form-group form-outline">
+                            <input type="password" class="form-control" value="johndoe">
+                            <label class="form-label" for="form1Example1">Password</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="form-group form-outline">
+                            <input type="text" class="form-control" value="johndoe" disabled>
+                            <label class="form-label" for="form1Example1">username</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <P class="colText">four Column</P>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group form-outline">
+                            <input type="text" class="form-control" value="UI Designer">
+                            <label class="form-label" for="form1Example1">Designation</label>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group form-outline">
+                            <input type="text" class="form-control">
+                            <label class="form-label" for="form1Example1">Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group form-outline">
+                            <input type="text" class="form-control" value="johndoe">
+                            <label class="form-label" for="form1Example1">userame</label>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group dropdown">
+                            <select class="form-control form-control-lg">
+                                <option>Select</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <P class="colText">Other Design Element</P>
+            <div class="row">
+                <p class="otherTabs">File Upload</p>
+                <div class="d-inline-flex otherTags">
+                    <button class="upload"><img src="image/cloud-upload-icon.svg" alt="" srcset=""> Upload</button>
+                    <p class="text-muted noItem">No Item Selected</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <p class="otherTabs">Radio Button</p>
+                <div class="d-inline-flex otherTags">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Option 1
+                        </label>
+                    </div <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                        value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Option 2
+                    </label>
+                </div </div>
+
+            </div>
+            <div class="row">
+                <p class="otherTabs">Check Box</p>
+                <div class="d-inline-flex otherTags">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Option 1
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Option 2
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row snackbar">
+                <p class="otherTabs">Snackbar</p>
+                <div class="conatiner">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="error">
+                                <img src="image/error-icon.svg" alt="" srcset=""> This is an Error message
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="information">
+                                <img src="image/info-icon.svg" alt="" srcset=""> This is an Information message
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="warning">
+                                <img src="image/warning-icon.svg" alt="" srcset=""> This is an Error message
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="success">
+                                <img src="image/success-icon.svg" alt="" srcset=""> This is an Information message
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <p class="otherTabs">Call to Action</p>
+                <div class="d-inline-flex otherTags">
+                    <button type="button" class="btn bg-danger btn-lg text-white cta">Primary</button>
+                    <button type="button" class="btn btn-outline-danger btn-lg cta">Secondary</button>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <p class="otherTabs">Tabs</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="d-inline-flex border-bottom border-muted">
+                            <p class="tabSwitch tabSwitchActive">Tab 1</p>
+                            <p class="tabSwitch">Tab 2</p>
+                            <p class="tabSwitch">Tab 3</p>
+                        </div>
+                    </div>
+                    <div class="row text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+</body>
+
+</html>
