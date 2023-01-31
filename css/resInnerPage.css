@@ -1,0 +1,56 @@
+.container {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+@media only screen and (max-width: 991px) {
+    #mainArea{
+        left: 1%;
+    }
+    #mySidebar {
+        display: none;
+    }
+
+    .mainNavImg {
+        margin-left: 0px;
+    }
+
+    .navbarLogo {
+        height: 30px;
+        width: 142px;
+        margin-right: 0px;
+    }
+
+    .navbarSearchIcon {
+        height: 16px;
+        width: 16px;
+    }
+
+    .navbarDownArrow {
+        margin-left: 0px;
+    }
+
+    .navbarUser {
+        margin-left: 0px;
+    }
+
+    .navbarProfile {
+        margin-left: 0px;
+        height: 44px;
+        width: 44px;
+    }
+
+    .navbarNotification {
+        height: 22px;
+        width: 22px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #mainArea{
+        left: 11%;
+    }
+    #mySidebar {
+        display: block;
+    }
+}

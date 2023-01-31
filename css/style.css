@@ -18,13 +18,16 @@ body {
     border: 20px solid #FFFFFF;
     box-shadow: 0px 4px 31px #0000000A;
     margin-top: 72px;
+    height:auto;
+    width: auto;
+    margin: auto;
 }
 
 .innerDiv {
     width: 50%;
 }
 
-.left {
+/* .left {
     position: relative;
     top: 72px;
     left: 166px;
@@ -37,7 +40,7 @@ body {
     box-shadow: 0px 4px 31px #0000000A;
     border: 20px solid #FFFFFF;
     opacity: 1;
-}
+} */
 
 .companyLogo {
     position: Absolute;
@@ -73,7 +76,6 @@ body {
 .loginText {
     position: Absolute;
     top: 315px;
-
 }
 
 .loginText p {
@@ -88,9 +90,10 @@ body {
     top: 372px;
 }
 
-input {
+.loginForm input {
     width: 429px;
     height: 49px;
+    margin:10px 0;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #ADADAD;
     border-radius: 5px;
@@ -188,13 +191,15 @@ span img {
     width: 19px;
     height: 18px;
 }
-
+#mySidebar{
+    display: none;
+}
 .w3-sidebar {
     z-index: 111;
 }
 
 .w3-sidebar button {
-    margin: 12px 30px;
+    margin: 12px 10px;
 }
 
 .w3-sidebar img {
@@ -204,17 +209,18 @@ span img {
 }
 
 .sidebarIcon:hover {
-    background-color: #FFF3F4;
-    color: #C8242F;
+    background-color: #FFF3F4 !important;
+    color: #C8242F !important;
 }
 
 .w3-sidebar {
-    width: 242px;
+    width: 190px;
 }
 
 #mainContent {
-    /* margin-left: 18%; */
     position: relative;
+    left: 15%;
+    width: 85%;
 }
 
 .Dashboard {
@@ -288,6 +294,9 @@ span img {
     padding: 30px;
     background-color: #FFFFFF;
     border-radius: 5px;
+    height:auto;
+    width: auto;
+    margin-right: 10px;
 }
 .sale img{
     /* min-width: 250px;
@@ -295,10 +304,18 @@ span img {
     margin: 0 auto; */
     max-width:100%;
 max-height:100%;
+
+}
+.saleByCountry{
+    height:auto;
+    width: auto;
 }
 .saleByCountry img{
     max-width:100%;
 max-height:100%;
+display: block;
+margin:0 auto;
+
 }
 
 .saleText {
@@ -418,7 +435,10 @@ table th {
     top: 0;
     right: 0;
 }
-
+#mainArea{
+    position: relative;
+    left:12%;
+}
 .analysisText {
     font-size: 30px;
 }
